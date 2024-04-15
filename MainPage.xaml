@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LabC.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label 
+                FontSize="32"
+                HorizontalOptions="Center"
+                Style="{DynamicResource MauiLabel}"
+                Text="How many years till you are 21?"
+                />
+
+            <Label 
+                FontSize="32"
+                HorizontalOptions="Center"
+                Style="{DynamicResource MauiLabel}"
+                Text="Enter your birthday (yyyyMMdd)"
+                />
+
+            <Editor x:Name="birthday_Input" Placeholder="Please enter your birthday: (yyyyMMdd)" />
+
+            <Button Clicked="CalculateAgeGap" Text="Calculate age difference"/>
+
+            <Label 
+                x:Name="age_Distance"
+                FontSize="32"
+                HorizontalOptions="Center"
+                Style="{DynamicResource MauiLabel}"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
